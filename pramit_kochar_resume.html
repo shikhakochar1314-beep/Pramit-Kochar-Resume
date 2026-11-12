@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pramit Kochar - Personal Resume</title>
+
+  <!-- INTERNAL CSS (Combines your style.css into one runnable file) -->
+  <style>
+    /* PAGE BACKGROUND & FONTS */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #e9ecef;
+      color: #222222;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* MAIN WRAPPER WITH RELATIVE POSITIONING */
+    .resume-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      position: relative; /* Allows child elements to use absolute positioning if needed */
+      font-size: 0; /* Removes extra whitespace gap between inline-block columns */
+    }
+
+    /* INLINE-BLOCK COLUMNS */
+    .left-column {
+      display: inline-block;
+      vertical-align: top;
+      width: 32%;
+      background-color: #f6f5f3; /* Warm beige color matching your CV */
+      padding: 25px;
+      box-sizing: border-box;
+      font-size: 14px; /* Resets font size */
+    }
+
+    .right-column {
+      display: inline-block;
+      vertical-align: top;
+      width: 68%;
+      background-color: #ffffff;
+      padding: 30px;
+      box-sizing: border-box;
+      font-size: 14px; /* Resets font size */
+    }
+
+    /* PROFILE IMAGE */
+    .profile-img {
+      width: 120px;
+      height: 140px;
+      object-fit: cover;
+      border: 2px solid #333333;
+      display: block;
+      margin-bottom: 20px;
+      background-color: #e8e6e1;
+    }
+
+    /* TYPOGRAPHY: FONTS & COLOURS */
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px;
+      color: #111111;
+      margin: 0 0 5px 0;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      letter-spacing: 3px;
+      color: #555555;
+      margin-top: 0;
+    }
+
+    h2 {
+      font-size: 15px;
+      letter-spacing: 1.5px;
+      color: #1a1a1a;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 5px;
+      margin-top: 25px;
+    }
+
+    p, li {
+      line-height: 1.5;
+      color: #333333;
+    }
+
+    /* LIST INDENTATION */
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* LINKS (ANCHOR TAGS) */
+    a {
+      color: #0056b3;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* FORM & BUTTON STYLING */
+    .contact-form input,
+    .contact-form textarea {
+      width: 95%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #bbbbbb;
+      font-family: Arial, sans-serif;
+    }
+
+    button {
+      background-color: #222222;
+      color: #ffffff;
+      border: none;
+      padding: 10px 18px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #444444;
+    }
+
+    /* RESPONSIVE STACKING FOR SMALL MOBILE SCREENS */
+    @media (max-width: 700px) {
+      .left-column,
+      .right-column {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MAIN CONTAINER -->
+  <div class="resume-container">
+
+    <!-- LEFT SIDEBAR (Uses inline-block positioning) -->
+    <div class="left-column">
+
+      <!-- IMAGE TAG (Uses an inline SVG avatar placeholder so it displays immediately; swap src="photo.jpg" when hosting locally) -->
+      <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 140'%3E%3Crect width='120' height='140' fill='%23e8e6e1'/%3E%3Cpath d='M15 140 C15 108, 36 96, 60 96 C84 96, 105 108, 105 140 Z' fill='%2327272a'/%3E%3Crect x='50' y='78' width='20' height='22' rx='5' fill='%23d4a387'/%3E%3Cellipse cx='60' cy='58' rx='22' ry='28' fill='%23ddafa0'/%3E%3Cpath d='M37 56 C36 28, 48 18, 62 18 C78 18, 86 29, 83 56 C81 44, 75 37, 64 37 C50 37, 42 42, 37 56 Z' fill='%2318181b'/%3E%3C/svg%3E" alt="Pramit Kochar Profile Photo" class="profile-img">
+
+      <h2>CONTACT</h2>
+      <!-- PARAGRAPH TAGS & ANCHOR TAGS -->
+      <p>Email: <a href="mailto:kocharpramit@gmail.com">kocharpramit@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919873697776">+91 98736 97776</a></p>
+      <p>Address: C-201, The Vilas, DLF Phase 2</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/pramit-kochar" target="_blank" rel="noopener noreferrer">linkedin.com/in/pramit-kochar</a></p>
+
+      <h2>SKILLS</h2>
+      <!-- UNORDERED LIST (Bullet points) -->
+      <ul>
+        <li>
+          <strong>Market Analysis &amp; Research:</strong> Understanding property trends, local supply and demand dynamics, and demographic shifts.
+        </li>
+        <li>
+          <strong>Professional Communication:</strong> Presentation delivery, team coordination, and corporate communication fundamentals.
+        </li>
+        <li>
+          <strong>Quantitative &amp; Analytical:</strong> Advanced Mathematics, Data Interpretation, Logical Reasoning, and Algorithmic Thinking.
+        </li>
+      </ul>
+
+    </div> <!-- Closing tag for left-column -->
+
+    <!-- RIGHT MAIN CONTENT (Uses inline-block positioning) -->
+    <div class="right-column">
+
+      <!-- HEADER SECTION -->
+      <div class="header-box">
+        <h1>Pramit Kochar</h1>
+        <p class="subtitle">STUDENT</p>
+      </div>
+
+      <!-- SUMMARY SECTION -->
+      <h2>SUMMARY</h2>
+      <p>
+        Highly analytical and disciplined student with a strong foundation in Mathematics, Economics, and Computer Science. Possesses proven leadership and teamwork experience gained through competitive sports and technology projects, with a genuine passion for real estate and business strategy.
+      </p>
+
+      <!-- EXPERIENCE SECTION -->
+      <h2>EXPERIENCE</h2>
+      <p><strong>Intern — Vedatya Institute</strong> (May 2024 – Jun 2024)</p>
+      <!-- ORDERED LIST (Numbered list) -->
+      <ol>
+        <li>Secured 2nd Position out of multiple peer teams in a capstone business case-study competition judged by industry experts.</li>
+        <li>Collaborated in a team to conduct rapid market analysis, financial feasibility checks, and risk assessments under tight deadlines.</li>
+        <li>Delivered a high-impact final pitch presentation, mastering corporate communication and public speaking fundamentals.</li>
+        <li><strong>Real Estate Link:</strong> Developed foundational skills in assessing market demand, resource allocation, and project presentation.</li>
+      </ol>
+
+      <!-- EDUCATION SECTION -->
+      <h2>EDUCATION</h2>
+      <p><strong>Class 12th CBSE</strong> — Delhi Public School, R.K. Puram (Aug 2024 – Aug 2026)</p>
+
+      <!-- CONTACT FORM SECTION (Forms, Inputs with name, and Submit Button) -->
+      <h2>GET IN TOUCH</h2>
+      <form action="#submitted" method="get" class="contact-form">
+        <p>
+          <label for="visitor-name">Your Name:</label><br>
+          <input type="text" id="visitor-name" name="visitor_name" placeholder="Enter your name" required>
+        </p>
+
+        <p>
+          <label for="visitor-email">Your Email:</label><br>
+          <input type="email" id="visitor-email" name="visitor_email" placeholder="Enter your email" required>
+        </p>
+
+        <p>
+          <label for="visitor-message">Message:</label><br>
+          <textarea id="visitor-message" name="visitor_message" rows="3" placeholder="Write a message..."></textarea>
+        </p>
+
+        <!-- SUBMIT BUTTON -->
+        <button type="submit" name="submit_btn">Send Message</button>
+      </form>
+
+    </div> <!-- Closing tag for right-column -->
+
+  </div> <!-- Closing tag for resume-container -->
+
+</body>
+</html>
